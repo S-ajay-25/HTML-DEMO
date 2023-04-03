@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lists Concepts</title>
+        <style>
+            .NavBar{
+                display: flex;
+                justify-content: left;
+                padding: 10px;
+                margin: 5px;
+                background-color: black;
+                color: white;
+            }
+            ul{
+                list-style: none;
+            }
+            li a{
+                text-decoration: none;
+                padding: 25px;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p>---------------Unordered Lists---------------</p>
+        <ul>
+            <li>Ajay</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <p>---------------ordered Lists---------------</p>
+
+        <ol>
+            <li>React.js</li>
+            <li>TypeScript</li>
+            <li>React hooks</li>
+            <li>React Router</li>
+        </ol>
+
+        <p>----------OrderList is  Uppercase-----------</p>
+        <ol type="A">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ol>
+
+          <ol type="a">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ol>
+
+          <ol type="I">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ol>
+
+          <ol start="50">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ol>
+
+        <p>---------------Description Lists---------------</p>
+
+        <dl>
+            <dt>Seethalla Ajay Madhav:</dt>
+            <dd><i>-DOB:</i>May-25-1999</dd>
+            <dt>Likhitha Siva Sai:</dt>
+            <dd><i>-DOB:</i>Nov-11-2000</dd>
+        </dl>
+
+        <p>---------------Nested Unordered Lists---------------</p>
+
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <ul>
+                <li>Coffee with Biscute</li>
+                <li>Tea with Bread</li>
+                
+            </ul>
+            <li>This is nested lists
+            </li>
+        </ul>
+
+
+        <h2>Navigation Menu</h2>
+        <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+        <ul class="NavBar">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#About">About</a></li>
+        </ul>
+
+        <h2>Use of The class Attribute in JavaScript</h2>
+        <p>Click the button to hide all elements with class name "city":</p>
+        <button onclick = "myfunction()">Hide elements</button>
+        <h3 class="city">London</h3>
+        <p>London is the capital of England.</p>
+        <h3 class="city">Paris</h3>
+        <p>Paris is the capital of France.</p>
+        <h3 class="city">Tokoy</h3>
+        <p>Tokyo is the capital of Japan.</p>
+
+        <script>
+            function myfunction(){
+                var x = document.getElementsByClassName('city')
+                for (var i = 0; i<x.length;i++){
+                    x[i].style.display = 'none'
+                }
+            }
+           
+
+        </script>
+    </body>
+</html>

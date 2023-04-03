@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Web Design</title>
+        <link rel="icon" type="image" href="./letter-r-logo-260nw-308667314.webp">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .left{
+                background-color: teal;
+                padding: 20px;
+                float: left;
+                width: 20%;
+            }
+            .main{
+                background-color: whitesmoke;
+                padding: 20px;
+                float: left;
+                width: 60%;
+            }
+            .right{
+                background-color: green;
+                padding: 20px;
+                float: left;
+                width: 20%;
+            }
+            @media screen and (max-width:1500px){
+                .left,.main,.right{
+                    width: 100%;
+                }
+                
+            
+        }
+        .header{
+           text-align: center;
+           background-color: #666;
+           padding: 15px;
+          }
+          .nav{
+            float: left;
+            width: 20%;
+            text-align: center;
+           
+           
+          }
+          .nav a{
+            text-decoration: none;
+            background-color: #666;
+            width: 100%;
+            margin-top: 7px;
+            display: block;
+            color: black;
+            padding: 8px;
+            
+          }
+          .menu{
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+          }
+          .rgt{
+            float: left;
+            width: 20%;
+            background-color: #666;
+            padding: 15px;
+            margin-top: 7px;
+          }
+          .footer{
+            text-align: center;
+            background-color: #666;
+            padding: 10px;
+            margin-top: 5px;
+            color: white;
+          }
+        @media screen and (max-width:600px) {
+            .nav,.menu,.rgt{
+                width: 100%;
+            }
+            
+        }
+        .header3{
+            background-color: #04AA6D;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .navbar{
+            background-color: white;
+        }
+        .left3{
+            float: left;
+            padding: 0 5px;
+            width: 33%;
+
+        }
+        .menu3{
+            float:left;
+            padding: 0 5px;
+            width: 33%;
+
+        }
+        .right3{
+            float: left;
+            padding: 0 5px;
+            width: 33%;
+        }
+        @media screen and (max-width:750px){
+            .left3, .menu3,.right3 {
+                width: 100%;
+            }
+            
+        }
+        </style>
+    </head>
+    <body>
+        <h2>This is an Responsive web design Concepts</h2>
+        <img src="./img_girl.jpg" alt="Image gril Photo not found" style="max-width:100%" >
+
+        <h1>Media Queries</h1>
+        <p>Resize the browser window.</p>
+        <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+        
+        <div class="left"> 
+            <p>Left Menu</p>
+        </div>
+        <div class="main">
+            <p>Main Menu</p>
+        </div>
+        <div class="right">
+            <p>Rigth Menu</p>
+        </div>
+        <div class="header">
+            <h1>Hello Responsive Web Design</h1>
+        </div>
+        <div style="overflow: auto;">
+            <div class="nav">
+                <a href="#Home">Home</a>
+                <a href="#project">Project</a>
+                <a href="#Dashboard">Dashboard</a>
+                <a href="#Contact">Contact</a>
+                <a href="#Login">Login</a>
+
+            </div>
+            <div class="menu">
+                <p>HTML Concepts</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa debitis necessitatibus eveniet quos? Neque aspernatur nesciunt perspiciatis excepturi repudiandae fuga quasi molestiae, maxime blanditiis saepe tenetur natus placeat numquam culpa.</p>
+
+            </div>
+            <div class="rgt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga rerum corporis quia iure optio dolorem in cumque quasi unde, maiores vel deleniti sed, dolores eius, expedita reprehenderit provident odit. Vitae!</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>@Copyrights Ajay Madhav</p>
+        </diV>
+        <div class="header3">
+            <h1>W3.CSS Demo</h1>
+            <p>Resize the page to see the responsiveness!</p>
+        </div>
+        <div class="navbar">
+            <div class="left3">
+                <h1>London</h1>
+                <p>London is the capital city of England.</p>
+                <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants</p>
+            </div>
+            <div class="menu3">
+                <h1>Paris</h1>
+                <p>Paris is the capital of France.</p>
+                <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+            </div>
+            <div class="right3"></div>
+            <h1>Tokyo</h1>
+            <p>Tokyo is the capital of Japan.</p>
+            <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+        </div>
+    </body>
+</html>
