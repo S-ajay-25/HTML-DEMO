@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Concepts</title>
+        <style>
+            .input{
+                display: flex;
+                flex-direction: column;
+                width: 20%;
+                padding: 5px;
+                justify-content: center;
+               
+              
+                
+            }
+            label,input{
+                
+                align-items: center;
+                margin-bottom: 5px;
+                
+                
+            }
+            .radio{
+                display: flex;
+                /* flex-direction: column; */
+                justify-content: center;
+            }
+            .checkbox{
+                display: flex;
+                justify-content: center;
+                
+            }
+            button{
+                padding: 10px;
+                margin: 10px;
+                display: flex;
+                width: 10%;
+                align-items: center;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: teal;
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form action="./text.txt" class="input">
+            <label for = "firstName">FirstName</label>
+            <input type="text" placeholder="Enter the First Name" id = "firstName" name="firstName" autocomplete="off">
+            <label for = "lastName">LastName</label>
+            <input type="text" placeholder="Enter the Last Name" id=" lastName" name="lastName">
+            <input type="submit" value="Submit">
+        </form>
+        <form class="radio">
+            <input type = 'radio' id="html" value="html" name='fav_language'>
+            <label for="html">HTML</label>
+            <input type = 'radio' id="css" value="css" name='fav_language'>
+            <label for="css">CSS</label>
+            <input type = 'radio' id="javascript" value="javascript" name='fav_language'>
+            <label for="javascript">JavaScript</label>
+        </form>
+        <form class="checkbox">
+            <input type = 'checkbox' id="html" value="html" name='fav_language'>
+            <label for="html">HTML</label>
+            <input type = 'checkbox' id="css" value="css" name='fav_language'>
+            <label for="css">CSS</label>
+            <input type = 'checkbox' id="javascript" value="javascript" name='fav_language'>
+            <label for="javascript">JavaScript</label>
+        </form>
+        <select id = "names" name = "EmpName">
+            <option value="Ajay">Ajay</option>
+            <option value="Madhav">Madhav</option>
+            <option value="Praveen">Praveen</option>
+            <option value="King">King</option>
+            <option value="Mi">MI</option>
+        </select>
+        <textarea name="message" rows = "10" cols="30">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At sint pariatur impedit consectetur architecto maiores quo fugit aliquid. Voluptas, nobis? Dicta nihil inventore at blanditiis optio eius est ratione sed.
+        </textarea>
+        <button onclick="alert('Hello World')">Click Me</button>
+        <form>
+            <input list="browser">
+            <datalist id="browser">
+                <option value="google">
+                <option value="microsoft">
+                <option value="linkedIn">
+                <option value="naukari">
+                <option value="typeScript">
+            </datalist>
+        </form>
+        <form>
+            <label for="fname">Fname</label>
+            <input type="text" value="UserName" >
+            <label for="password">Fname</label>
+            <input type="password" value="" >
+            
+        </form>
+        <form>
+            <label for="fname">Fname</label>
+            <input type="date" value="UserName" >
+            <input type="submit" value="submit">
+            
+        </form>
+        <form>
+            <label for="myfile">Select a file</label>
+            <input type="file" name="myfile" id="myfile">
+        </form>
+        <form>
+            <label for="mymonth">Select a Month</label>
+            <input type="month" name="mymonth" id="mymonth">
+            <input type="submit" value="Submit">
+        </form>
+        <form>
+            <label for="mymonth">Select a Month</label>
+            <input type="month" name="mymonth" id="mymonth">
+            <input type="hidden" name="ajay" value="230">
+            <input type="submit" value="Submit">
+        </form>
+        <form>
+            <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+  <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
